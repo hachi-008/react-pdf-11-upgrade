@@ -100,7 +100,7 @@ Chromium    140.0.7339.0, 143.0.7499.0, 147.0.7727.0, 153.0.8010.0 (headless, 12
 ```
 
 - react-pdf 10.5.0이 쓰던 pdfjs-dist 5.4.296에는 `getOrInsertComputed` 호출이 없고, `Math.sumPrecise`가 없으면 채우는 코드가 들어 있었어요. 6.3.289에서 그 코드가 빠졌어요
-- react-pdf 11의 `LinkService`는 `pdfjs-dist/web/pdf_viewer.mjs`를 import해요. 그래서 서버에서 평가될 때 오류가 `DOMMatrix is not defined`가 아니라 `window is not defined`로 바뀌었어요. `ssr: false`는 여전히 필요해요([1편 저장소](https://github.com/danbom/nextjs-pdfjs-minimal))
+- react-pdf 11의 `LinkService`는 `pdfjs-dist/web/pdf_viewer.mjs`를 import해요. 그래서 서버에서 평가될 때 오류가 `DOMMatrix is not defined`가 아니라 `window is not defined`로 바뀌었어요. `ssr: false`는 여전히 필요해요([1편 저장소](https://github.com/hachi-008/nextjs-pdfjs-minimal))
 
 ## 테스트 PDF 다시 만들기
 
